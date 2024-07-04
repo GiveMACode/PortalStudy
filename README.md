@@ -44,3 +44,5 @@ The Educational Portal is an online platform developed to facilitate learning an
 - Database: SQL Server / NoSQL
 - Authentication: IdentityServer4
 - Hosting: Azure
+------------------------------------------------------
+
