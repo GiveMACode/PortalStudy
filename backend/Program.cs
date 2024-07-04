@@ -12,10 +12,10 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddHttpClient<ViaCepService>();
 builder.Services.AddControllers();
 builder.Services.AddDbContext<AppDataContext>(o => o.UseSqlite("Data Source=ApiDataBase.db;Cache=shared"));
-// builder.Services.AddControllers().AddJsonOptions(options =>{
-//     options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
-//     options.JsonSerializerOptions.WriteIndented = true;
-// });
+builder.Services.AddControllers().AddJsonOptions(options =>{
+     options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+     options.JsonSerializerOptions.WriteIndented = true;
+ });
 
 //CORS
 builder.Services.AddCors(options =>
@@ -29,9 +29,6 @@ builder.Services.AddCors(options =>
         });
 });
 var app = builder.Build();
-
-
-
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
