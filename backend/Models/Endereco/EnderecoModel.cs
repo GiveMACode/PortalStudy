@@ -1,8 +1,9 @@
-﻿namespace backend.Models.Endereco;
+﻿using backend.Models.Pessoa;
+namespace backend.Models.Endereco;
 
 public class EnderecoModel
 { 
-    
+    public Guid Id { get; set; }
     public string? Cep { get; set; }
     public string? Logradouro { get; set; }
     public string? Complemento { get; set; }
@@ -13,5 +14,6 @@ public class EnderecoModel
     public string? Gia { get; set; }
     public string? Ddd { get; set; }
     public string? Siafi { get; set; }
-
+    //Propriedade de navegação para Pessoa
+    public PessoaModel? Pessoa { get; set; }
 }
