@@ -6,7 +6,6 @@ namespace backend.Models.Pessoa;
 
     public class PessoaModel
     {
-
         public Guid Id { get; set; }
 
         [Required]
@@ -24,7 +23,6 @@ namespace backend.Models.Pessoa;
 
         public ICollection<TelefoneModel>? Telefones { get; set; }
 
-        public  MyProperty { get; set; }
-
-        
+        public UsuarioModel Usuario { get; set; }
+        public bool IsDeleted { get; set; }
 }
