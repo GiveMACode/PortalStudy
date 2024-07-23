@@ -10,6 +10,7 @@ public class UsuarioModel
     public Regra Regra { get; set; }
     public string? Email { get; set; }
     public PessoaModel Pessoa { get; set; }
+    public bool IsDeleted { get; set; }
 }
 
 public enum Regra
