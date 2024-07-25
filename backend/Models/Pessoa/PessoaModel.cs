@@ -23,6 +23,6 @@ namespace backend.Models.Pessoa;
 
         public ICollection<TelefoneModel>? Telefones { get; set; }
 
-        public UsuarioModel Usuario { get; set; }
+        public UsuarioModel? Usuario { get; set; }
         public bool IsDeleted { get; set; }
 }
